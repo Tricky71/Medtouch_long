@@ -1,0 +1,53 @@
+.menu__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item {
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+
+.menu__link {
+  position: relative;
+  color: $accent;
+  font-size: 16px;
+  font-weight: 700;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: $accent;
+    top: 7px;
+    left: -20px;
+  }
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+}
+
+@media(min-width: $desktop-width) {
+  .menu {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: -225px;
+  }
+
+  .menu__item {
+    padding-left: 0;
+  }
+
+  .menu__link {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+      &::before {
+        display: none;
+      }
+  }
+}
+

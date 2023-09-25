@@ -27,6 +27,7 @@
   border: 5px solid $accent;
     & span {
       color: $accent;
+      font-weight: 700;
     }
 }
 
@@ -36,19 +37,12 @@
 }
 
 .info-block__title {
- 
-  
   font-size: 38px;
-  // font-style: normal;
-  // font-weight: 300;
-  // line-height: 110%;
 }
 
 .info-block__text {
   margin-bottom: 20px;
    & p {
-      // margin: 0;
-      // padding: 0;
       margin-bottom: 20px;
       font-size: 20px;
     }
@@ -57,9 +51,13 @@
 .info-block__bottom {
   padding: 45px 80px;
   border: 10px solid $accent;
-    // & span {
-    //   color: $accent;
-    // }
-}
+    &--red {
+      border-color: $accent-red;
+        & span {
+          color: $accent-red;
+          font-weight: 700;
+        }
+    }
+  }
 }
 

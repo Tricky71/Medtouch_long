@@ -61,13 +61,13 @@ a {
   border: none;
   color: #fff;
   text-decoration: none;
-  // background-color: $accent;
-  padding: 15px 45px;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 3px;
-  border-radius: 2px;
+  background-color: $accent-red;
+  padding: 24px 72px;
+  font-size: 18px;
+  // text-transform: uppercase;
+  font-weight: 400;
+  // letter-spacing: 3px;
+  border-radius: 10px;
   text-align: center;
   position: relative;
   outline: none;
@@ -92,7 +92,7 @@ a {
     color: #fff;
   }
   &:hover {
-    // background-color: lighten($accent, 5%);
+    background-color: lighten($accent-red, 10%);
     &::after {
       opacity: .22;
     }

@@ -47,6 +47,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 16px;
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
@@ -62,8 +66,8 @@ a {
   color: #fff;
   text-decoration: none;
   background-color: $accent-red;
-  padding: 24px 72px;
-  font-size: 18px;
+  padding: 14px 40px;
+  font-size: 16px;
   // text-transform: uppercase;
   font-weight: 400;
   // letter-spacing: 3px;
@@ -102,6 +106,17 @@ a {
     &::after {
       opacity: .32;
     }
+  }
+}
+
+@media(min-width: $tablet-width) {
+  p {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 24px 72px;
+    font-size: 18px;
   }
 }
 

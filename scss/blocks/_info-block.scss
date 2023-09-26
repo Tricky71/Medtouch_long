@@ -9,17 +9,102 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
-  line-height: 110%;
+  line-height: 1.15;
 }
 
 .info-block__text {
+  margin-bottom: 30px;
+  & p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.35;
+    letter-spacing: -0.5px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+  } & span {
+    color: $accent;
+    font-weight: 700;
+  }
+}
+
+.info-block__list {
+  @include reset-list;
+  margin-bottom: 60px;
+}
+
+.info-block__item {
+  position: relative;
   margin-bottom: 20px;
-   & p {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 20px;
-      font-size: 16px;
+  padding-left: 35px;
+    &:last-child {
+      margin-bottom: 0;
     }
+    &::before {
+      position: absolute;
+      content: url('../img/icons/arrow1.svg');
+      width: 24px;
+      height: 31px;
+      top: 0;
+      left: 0;
+      transform: translateY(-15%);
+    }
+}
+
+.info-block__content {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  margin-bottom: 65px;
+  & div {
+    max-width: 39%;
+    // height: 330px;
+    padding: 90px 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 10px solid $accent;
+  }
+  & p {
+    margin: 0;
+    padding: 0;
+    // width: 218px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .info-block__arrow {
+    position: relative;
+    width: 100px;
+    height: 5px;
+    align-self: center;
+    background-color: $accent;
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 5px;
+        
+      
+        background-color: inherit;
+      }
+      &::before {
+        top: -9px;
+        right: -4px;
+        transform: rotate(45deg);
+      }
+      &::after {
+        top: 9px;
+        right: -4px;
+        transform: rotate(-45deg);
+      }
+  }
+  
 }
 
 .info-block__bottom {
@@ -45,6 +130,18 @@
 @media(min-width: $desktop-width) {
   .info-block {
   margin-bottom: 100px;
+    &--2 {
+      .info-block__text {
+        margin-bottom: 40px;
+      }
+    }
+    &--3 {
+      .info-block__text {
+        & p {
+          margin-bottom: 16px;
+        }
+      }
+    }
 }
 
 .info-block__title {
@@ -52,15 +149,15 @@
 }
 
 .info-block__text {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
    & p {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 20px;
     }
 }
 
 .info-block__bottom {
-  padding: 45px 80px;
+  padding: 42px 80px;
   border: 10px solid $accent;
     
   }

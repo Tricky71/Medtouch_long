@@ -32,19 +32,21 @@
 @media(min-width: $desktop-width) {
   .menu {
     position: absolute;
-    width: 200px;
+    width: 194px;
     top: 0;
-    left: -225px;
+    left: -195px;
   }
 
-  .menu__item {
+  
+  .menu__item{
     padding-left: 0;
   }
+  
 
   .menu__link {
     font-size: 13px;
     font-weight: 700;
-    line-height: 13px;
+    line-height: 1;
       &::before {
         display: none;
       }

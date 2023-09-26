@@ -112,9 +112,13 @@
   
 }
 
-.info-block__button {
+.info-block__bordering {
   padding-left: 20px;
+  margin-bottom: 40px;
   border-left: 5px solid $accent;
+    &:last-child {
+      margin-bottom: 0;
+    }
 }
 
 .info-block__bottom {
@@ -169,7 +173,9 @@
 @media(min-width: $desktop-width) {
   .info-block {
     margin-bottom: 100px;
-      &--2 {
+      &--2,
+      &--4,
+      &--5 {
         .info-block__text {
           margin-bottom: 40px;
         }
@@ -179,6 +185,17 @@
           & p {
             margin-bottom: 16px;
           }
+        }
+      }
+      &--6 {
+        .info-block__text {
+          margin-bottom: 0;
+            & p {
+              margin-bottom: 16px;
+            }
+        }
+        .info-block__list {
+          margin-bottom: 16px;
         }
       }
   }

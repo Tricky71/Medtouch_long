@@ -55,13 +55,15 @@
 
 .info-block__content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  // align-items: center;
+  align-items: center;
   margin-bottom: 65px;
   & div {
-    max-width: 39%;
-    // height: 330px;
+    width: 290px;
+    height: 290px;
     padding: 90px 55px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +73,7 @@
   & p {
     margin: 0;
     padding: 0;
-    // width: 218px;
+    width: 218px;
     font-size: 12px;
     text-align: center;
     line-height: 1.35;
@@ -79,6 +81,8 @@
 
   .info-block__arrow {
     position: relative;
+    margin-bottom: 70px;
+    transform: rotate(90deg);
     width: 100px;
     height: 5px;
     align-self: center;
@@ -115,6 +119,10 @@
 .info-block__bottom {
   padding: 10px 20px;
   border: 5px solid $accent;
+    & p {
+      margin: 0;
+      padding: 0;
+    }
     & span {
       color: $accent;
       font-weight: 700;
@@ -130,6 +138,65 @@
 
 .info-block .info-block__bottom--red {
   border-color: $accent-red;
+}
+
+@media(min-width: $tablet-width) {
+  .info-block__content {
+    flex-direction: row;
+  // display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
+  & div {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 0;
+    // padding: 90px 55px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // border-radius: 50%;
+    // border: 10px solid $accent;
+  }
+  & p {
+    margin: 0;
+    padding: 0;
+    // width: 218px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .info-block__arrow {
+    position: relative;
+    width: 100px;
+    height: 5px;
+    align-self: center;
+    transform: rotate(0deg);
+    background-color: $accent;
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 5px;
+        
+      
+        background-color: inherit;
+      }
+      &::before {
+        top: -9px;
+        right: -4px;
+        transform: rotate(45deg);
+      }
+      &::after {
+        top: 9px;
+        right: -4px;
+        transform: rotate(-45deg);
+      }
+  }
+  
+}
 }
 
 @media(min-width: $desktop-width) {

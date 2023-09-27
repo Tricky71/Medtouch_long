@@ -1,0 +1,32 @@
+.links__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+.links__list {
+  @include reset-list;
+}
+
+.links__item {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+@media(min-width: $desktop-width) {
+  .links__title {
+    font-size: 38px;
+    letter-spacing: -2.8px;
+  }
+
+  .links__item {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+}

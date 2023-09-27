@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.woff') format('woff2'),
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
         url('../fonts/Montserrat-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: regular;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/MonLightBold.woff2') format('woff2'),
-        url('../fonts/MonLightBold.woff') format('woff');
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

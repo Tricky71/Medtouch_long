@@ -37,16 +37,14 @@
     left: -195px;
   }
 
-  
   .menu__item{
     padding-left: 0;
   }
   
-
   .menu__link {
-    font-size: 13px;
+    font-size: 11.5px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1; 
       &::before {
         display: none;
       }

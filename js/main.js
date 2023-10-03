@@ -1,25 +1,25 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
-
   const smoothLinks = document.querySelectorAll('a[href^="#links"]');
   const smoothItems = document.querySelectorAll('.links__item');
-
+  
   for (let i = 0; i < smoothLinks.length; i++) {
     const arr = [];
     smoothLinks.forEach((n) => {
-    arr.push(n.getAttribute('data-link'));
-    return arr;
+      arr.push(n.getAttribute('data-link'));
+      return arr;
     });
+    
     smoothLinks[i].addEventListener('click', function (e) {
       e.preventDefault();
-      smoothItems[arr[i-1]].scrollIntoView({
+      smoothItems[arr[i] - 1].scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
     });
   };
-
+  
   const btn1 = document.querySelector('.button__active--1');
   const btn2 = document.querySelector('.button__active--2');
   const modal2= document.querySelector('.main-modal--2');
@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
   closeBtn1.addEventListener('click', () => {
     modal1.classList.toggle('hidden');
     overlay.classList.toggle('hidden');
-    
   });
   
   closeBtn2.addEventListener('click', () => {

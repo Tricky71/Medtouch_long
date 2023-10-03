@@ -1,5 +1,5 @@
 .main-modal {
-  width: 100%;
+  max-width: 500px;
   position: fixed;
   top: 50px;
   left: 50%;
@@ -91,6 +91,8 @@
 
 @media(min-width: $tablet-width) {
   .modal {
+    width: 700px;
+    transform: translateX(-110px);
     & h2 {
       margin-bottom: 20px;
       font-size: 25px;
@@ -123,9 +125,12 @@
 }
 }
 
+// @media(min-width: )
+
 @media(min-width: $desktop-width) {
   .modal {
   width: 1280px;
+  transform: translateX(-400px);
   border-radius: 20px;
     &--1 {
       

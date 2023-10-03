@@ -1,0 +1,21 @@
+.downloads {
+  
+  & .info-block__text {
+    & p {
+      margin-bottom: 20px;
+      }
+  }
+}
+
+.downloads__wrapper {
+  & h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -5.8px;
+  
+  }
+}

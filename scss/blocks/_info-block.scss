@@ -28,6 +28,9 @@
         b {
           margin-bottom: 15px;
         }
+        & .info-block__text--2 {
+          margin-bottom: 10px;
+        }
       }
       
       & .info-block__comment {
@@ -125,6 +128,7 @@
   align-items: center;
   margin-bottom: 40px;
   & div {
+      
     box-sizing: border-box;
     width: 290px;
     height: 290px;
@@ -250,6 +254,15 @@
       height: 330px;
       margin-bottom: 0;
     }
+
+  .info-block__content-circle {
+    &--2 {
+      padding: 90px 40px;
+    }
+    & p {
+      width: 223px;
+    }
+  }
 
   .info-block__arrow {
     margin-bottom: 0;

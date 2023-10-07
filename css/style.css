@@ -349,6 +349,10 @@ html {
           box-sizing: inherit;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 /* .container {
   width: 100%;
   padding-right: 15px;

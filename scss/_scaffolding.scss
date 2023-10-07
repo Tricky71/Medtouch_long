@@ -26,6 +26,10 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
   // position: fixed;
 	font-size: 18px;

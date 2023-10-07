@@ -1,3 +1,9 @@
+.block-wrapper {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .longread-header {
   max-width: 1440px;
   margin: 0 auto;
@@ -36,7 +42,18 @@
   margin-bottom: 50px;
 }
 
+@media(min-width: 576px) {
+  .block-wrapper{
+    max-width: 540px;
+  }
+}
+
+
 @media(min-width: 768px) {
+   .block-wrapper{
+    max-width: 540px;
+  }
+
   .longread-header {
 
     background-size: 48%;
@@ -47,6 +64,11 @@
 }
 
 @media(min-width: $tablet-width) {
+
+  .block-wrapper{
+    max-width: 960px;
+  }
+
   .longread-header {
     padding-top: 300px;
     background-size: 100%;
@@ -63,6 +85,10 @@
 }
 
 @media(min-width: $desktop-width) {
+  .block-wrapper {
+    max-width: 875px;
+  }
+
   .longread-header {
   margin-bottom: 100px;
   
